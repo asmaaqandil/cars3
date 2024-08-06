@@ -1,0 +1,723 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+ :root {
+  --primary-color:#dbd9d9f3 ;
+  
+  --scondary-color: rgba(163, 20, 20, 0.979) ;
+  --color-dark: #000000;
+  --color-light : #fff;
+ }
+ body {
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif; 
+ }
+ .container {
+  height: 100vh;
+  width: 100%;
+ 
+ }
+ nav{
+  height: 10%;
+  width: 90%;
+  margin: auto;
+ }
+ .nav-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  
+ }
+ .nav-head .logo{
+  color: #000;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 10px;
+ 
+ }
+ .nav-links ul li  {
+  display: inline-block;
+  margin: 15px;
+ }
+ .nav-links ul li a {
+  color: #000000;
+  font-size: 18px;
+ }
+ .social-links ul li{
+  display: inline-block;
+  margin: 10px;
+
+ }
+ .social-links ul li a{
+    color: #000;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 2s ease;
+ }
+ .social-links ul li a:hover{
+    color: #fff;
+    background-color: var(--scondary-color);
+ }
+  .menu {
+    height: 85%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+ }
+ .menu .left {
+    width: 500px;
+ 
+    
+ }
+ .menu .left h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--scondary-color);
+    margin-top: 15px;
+ }
+ .menu .left p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+
+ }
+ .menu .btn {
+   padding: 15px 25px;
+   color: #fff;
+   background-color: var(--scondary-color);
+   border: 3px solid #fff;
+   border-radius: 30px;
+   font-size: 16px;
+   margin-top: 20px;
+   transition: all 2s ease;
+ }
+ .menu .btn:hover {
+   color: var(--scondary-color);
+   background-color: #fff;
+ }
+
+
+
+ .menu .right {
+    width: 500px;
+ }
+
+ .menu .right img {
+    max-width: 450px;
+
+
+ }
+ /*about*/
+ .about {
+   height: 85%;
+   width: 90%;   
+   padding: 1rem 0rem;
+   margin-top: 8rem;
+   background-color:var(--primary-color) ;
+   box-shadow: 3px 20px 15px var(--color-dark);
+   border-top: 3px solid #fff;
+   margin: auto;
+  }
+  .about img {
+  
+   width: 500px;
+  }
+  .mine {
+  
+  
+   align-items: center;
+   text-align: center;
+   margin: 0 auto;
+   padding: 2rem 2rem;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2rem;
+
+  }
+  .about-text h2 {
+   color: var(--scondary-color);
+   font-size: 35px;
+   margin-bottom: 20px;
+}
+.about-text p {
+   color: var(--color-dark);
+   letter-spacing: 1px;
+   line-height: 25px;
+   font-size: 8px;
+   font-weight: 400;
+   margin-bottom: 45px;
+}
+button {
+   text-decoration: none;
+   background-color:rgb(155, 11, 11) ;
+   color: #fff;
+   font-size: 18px;
+   padding: 12px 16px;
+   border-radius: 30px;
+   transition: .5s ease; 
+   margin-bottom: 30px;
+   cursor: pointer;
+   border: none;
+}
+button:hover {
+   background-color: #fff;
+   color:rgb(155, 11, 11) ;
+}
+.btns{
+
+   text-decoration: none;
+background-color:rgb(155, 11, 11) ;
+color: #fff;
+font-size: 18px;
+padding: 12px 16px;
+border-radius: 30px;
+transition: .5s ease; 
+
+cursor: pointer;
+border: none;
+}
+.prices {
+   margin: auto;
+   width: 90%;   
+   padding: 1rem 0rem;
+   margin-top: 8rem;
+   background-color:var(--primary-color) ;
+   box-shadow: 3px 20px 15px var(--color-dark);
+   border-top: 3px solid #fff;
+   
+}
+.prices .row {
+   padding: 3rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+   align-items: center;
+   text-align: center;
+   
+  
+}
+.prices .row .cards {
+   padding: 1rem;
+   background-color: #89918eab;
+    border-radius: 15px;
+   
+    transition: all 2s ease; 
+}
+.prices .row .cards:hover{
+   transform: scale(1.2)   
+}
+.prices .row .cards p{
+   margin-bottom: 20px;
+}
+.prices .row .cards .btn1 ,.btn2{
+   padding: 5px 8px;
+   border: 2px solid #fff;
+   border-radius: 5px;
+   font-size: 14px;
+   margin: 5px;
+   color: #000;
+   background-color: #9b9fa0;
+   transition: 2s ease;
+}
+.prices .row .cards .btn1:hover{
+   background-color: #fff;
+}
+
+.row .cards img {
+   width: 150px;
+ 
+}
+/*contact*/
+.contact {
+   width: 90%;   
+   padding: 2rem 0rem;
+   box-shadow: 3px 20px 15px var(--color-dark);
+   margin:8rem auto;
+ 
+   background-color:#191919 ;
+   display: flex;  
+   justify-content: center;
+   align-items: center;
+   background: url("images/img80.jpg") no-repeat center center/cover;
+   
+}
+.contact form {
+   width: 670px;
+   height: 600px;
+   display: flex;
+   justify-content: center;
+   box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+   border-radius: 15px;
+   background: rgba(255, 255, 255, 0.1);
+   flex-wrap: wrap;
+}
+.contact form h2 {
+   color: #000;
+   font-weight: 600;
+   margin-top: 20px;
+   width: 500px;
+   text-align: center;
+}
+
+.contact form input {
+   width: 290px;
+   height: 40px;
+   padding-left: 10px;
+   outline: none;
+   border: none;
+   font-size: 15px;
+   margin-bottom: 10px;
+   background: none;
+   border-bottom: 2px solid #000;
+}
+.contact form input::placeholder {
+   color: #000;
+}
+.contact form #LastName ,
+.contact form #Mobile {
+   margin-left: 20px;
+}
+.contact form h4 {
+   font-size: 18px;
+   color: #000;
+   font-weight: 300;
+   width: 600px;
+   margin-top: 20px;
+}
+.contact form textarea {
+   background: none;
+   border: none;
+   border-bottom: 2px solid #000;
+   color: #000;
+   font-weight: 100;
+   font-size: 10px;
+   padding: 10px;
+ 
+   min-width: 500px;
+   max-width: 500px;
+   min-height: 80px;
+   max-height: 80px;
+}
+textarea::-webkit-scrollbar {
+   width: 1em;
+}
+textarea::-webkit-scrollbar-thumb {
+   background-color: rgba(194, 194, 194, 0.713);
+}
+.contact form #button {
+   border: none;
+   background: #fff;
+   border-radius: 5px;
+   margin-top: 20px;
+   font-weight: 600;
+   font-size: 20px;
+   color: #333;
+   width: 90px;
+   padding: 0;
+   margin-right: 300px;
+   margin-bottom: 30px;
+   transition: 0.1s;
+}
+.contact form #button:hover {
+   opacity: 0.7;
+}
+footer {
+   
+ background-color: #0a0a0a;
+ padding: 80px 60px 20px;
+ text-align: center;
+}
+footer p {
+   font-size: 15px;
+   color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*media menu start*/
+  @media (max-width:950px){
+   .nav-head .logo{
+    
+      font-size: 18px;
+      font-weight: 500;
+     
+     }
+     .nav-links ul li  {
+      
+      margin: 15px 10px;
+     }
+
+     .nav-links ul li a {
+      
+      font-size: 16px;
+     } 
+     .social-links ul li{
+     
+      margin: 10px 8px;
+    
+     }
+     .social-links ul li a{
+      font-size: 14px;
+        padding: 8px;
+      
+     }
+
+     .menu .left h1 {
+      font-size: 30px;
+    
+   }
+   .menu .left p {
+      margin-bottom: 30px;
+      font-size: 14px;
+      font-weight: 400;
+  
+   }
+   .menu .right img {
+      max-width: 400px;
+   }
+  }
+  @media(max-width:760px)
+  {
+   .nav-head .logo{
+    
+      font-size: 12px;
+      font-weight: 500;
+     
+     }
+     .nav-links ul li  {
+      
+      margin: 10px ;
+     }
+     .nav-links ul li a {
+      
+      font-size: 12px;
+     } 
+    
+     .social-links ul li{
+     
+      margin: 8px 6px;
+    
+     }
+     .menu .left h1 {
+      font-size: 25px;
+    
+   } 
+   .menu .left p {
+      margin-bottom: 30px;
+      font-size: 12px;
+      font-weight: 400;
+  
+   }
+   .menu .btn {
+      padding: 10px 20px;
+      
+    }
+    .menu .right img {
+      max-width: 300px;
+   }
+  } 
+  @media(max-width:600px){
+   
+      .nav-head .logo{
+       
+         font-size: 8px;
+         font-weight: 500;
+        
+        }
+        .nav-links ul li  {
+         
+         margin: 10px 5px;
+        }
+        .social-links ul li a{
+         font-size: 8px;
+           padding: 6px;
+
+         
+        }
+       
+       
+        .social-links ul li{
+        
+         margin: 8px 6px;
+       
+        }
+        .menu .left h1 {
+         font-size: 20px;
+       
+      } 
+      .menu .left p {
+         margin-bottom: 30px;
+         font-size: 8px;
+         font-weight: 400;
+     
+      }
+      .menu .btn {
+         padding: 8px 15px;
+         
+       }
+       .menu .right img {
+         max-width: 200px;
+      }
+     
+  }
+  @media(max-width:450px){
+   .nav-head .logo{
+       
+      font-size: 5px;
+      font-weight: 500;
+     
+     }
+     .nav-links ul li a {
+      
+      font-size: 6px;
+     }
+     .nav-links ul li  {
+      
+      margin: 10px 3px;
+     }
+     .social-links ul li a{
+      font-size: 6px;
+        padding: 4px;
+
+      
+     }
+    
+    
+     .social-links ul li{
+     
+      margin: 6px 4px;
+    
+     }
+     .menu .left h1 {
+      font-size: 15px;
+    
+   } 
+   .menu .left p {
+      margin-bottom: 30px;
+      font-size: 6px;
+      font-weight: 400;
+  
+   }
+   .menu .btn {
+      padding: 6px 8px;
+      font-size: 10px;
+    }
+    .menu .right img {
+      max-width: 180px;
+   }
+  }
+  /*media menu end*/
+  /*media about and prices and contact*/
+  @media (max-width:970px){
+   .about img {
+  
+      width: 350px;
+     }
+     .prices .row .cards .btn1 ,.btn2{
+      padding: 5px 5px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      font-size: 10px;
+      margin: 4px;
+    
+   }
+   
+.row .cards img {
+   width: 130px;
+  
+}
+
+.prices .row .cards p{
+   margin-bottom: 10px;
+   margin-top: 10px;
+}
+
+.prices .row .cards .btn1 ,.btn2{
+ padding: 5px 5px;
+ border: 2px solid #fff;
+ border-radius: 5px;
+ font-size: 8px;
+ margin: 4px;
+
+}
+}
+
+@media (max-width:710px){
+   .about img {
+  
+      width: 250px;
+     }
+     .about-text h2 {
+      color: var(--scondary-color);
+      font-size: 25px;
+     
+   } 
+   button {
+      text-decoration: none;
+      background-color:rgb(155, 11, 11) ;
+      color: #fff;
+      font-size: 14px;
+      padding: 8px 12px;
+    
+     
+   }
+   .prices .row {
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      align-items: center;
+      text-align: center;
+      
+     
+   }
+   .contact form input {
+      width: 220px;
+      height: 40px;
+      padding-left: 10px;
+      outline: none;
+      border: none;
+      font-size: 15px;
+      margin-bottom: 10px;
+      background: none;
+      border-bottom: 2px solid #000;
+   }
+ 
+   .contact form textarea {
+      background: none;
+      border: none;
+      border-bottom: 2px solid #000;
+      color: #000;
+      font-weight: 100;
+      font-size: 5px;
+      padding: 10px;
+    
+      min-width: 500px;
+      max-width: 500px;
+      min-height: 80px;
+      max-height: 80px;
+   }
+   .contact form h4 {
+      font-size: 14px;
+      color: #000;
+      font-weight: 300;
+      width: 600px;
+      margin-top: 20px;
+      margin-left: 120px;
+   }
+}
+@media (max-width:545px){
+
+   .container {
+      height: 85vh;
+      width: 100%;
+     
+     }
+
+   .mine {
+  
+  
+     
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+     
+   
+     } 
+     .about img {
+  
+      width: 140px;
+      margin-left: 70px;
+     }
+     .prices .row {
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+  
+      
+     
+   } 
+   .contact form {
+      width: 400px;
+      height: 470px;
+   }
+   .contact form h2 {
+      font-size: 15px;
+   }
+   .contact form input {
+   
+    font-size: 10px;
+   }
+   .contact form #button {
+      border: none;
+      background: #fff;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 10px;
+      color: #333;
+      width: 80px;
+      padding: 0;
+      margin-right: 150px;
+     
+   }
+   .about-text h2 {
+      color: var(--scondary-color);
+      font-size: 18px;
+     
+   } 
+}
+
